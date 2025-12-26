@@ -1,0 +1,25 @@
+{
+  "name": "@browser-recall/extension",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Local-first semantic search for browser history in a Chrome extension, powered by Chrome Built-in AI.",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:t28hub/browser-recall.git",
+    "directory": "apps/extension"
+  },
+  "scripts": {
+    "postinstall": "wxt prepare",
+    "dev": "wxt",
+    "build": "wxt build",
+    "zip": "wxt zip"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.1.32",
+    "@types/node": "catalog:",
+    "@wxt-dev/module-react": "1.1.5",
+    "typescript": "catalog:",
+    "wxt": "0.20.13"
+  }
+}
