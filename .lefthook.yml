@@ -1,0 +1,19 @@
+pre-commit:
+  parallel: true
+  commands:
+    format:
+      glob: '*.{ts,tsx,js,jsx,mjs,cjs,json}'
+      run: pnpm format
+      stage_fixed: true
+
+commit-msg:
+  parallel: false
+  commands:
+    commitlint:
+      run: pnpm commitlint --edit {1}
+
+pre-push:
+  parallel: true
+  commands:
+    lint:
+      run: pnpm lint

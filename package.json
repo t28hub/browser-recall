@@ -10,10 +10,18 @@
     "url": "https://github.com/t28hub/browser-recall.git"
   },
   "scripts": {
+    "format": "biome format --write .",
+    "lint": "biome lint ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.10",
+    "@commitlint/cli": "20.2.0",
+    "@commitlint/config-conventional": "20.2.0",
+    "lefthook": "2.0.12"
   },
   "engines": {
     "node": ">=22.0.0",
-    "pnpm": "10.26.1"
+    "pnpm": "10.26.2"
   },
-  "packageManager": "pnpm@10.26.1"
+  "packageManager": "pnpm@10.26.2"
 }
