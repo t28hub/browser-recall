@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [],
+    "deny": [
+      "Bash(rm:)",
+      "Bash(sudo:*)",
+      "Bash(curl:*)",
+      "Bash(wget:*)",
+      "Bash(git push:)",
+      "Bash(git commit --no-verify:*)",
+      "Bash(pnpm publish:*)",
+      "Bash(pnpm deploy:*)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(*.local.*)"
+    ]
+  }
+}
