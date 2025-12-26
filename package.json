@@ -10,13 +10,17 @@
     "url": "https://github.com/t28hub/browser-recall.git"
   },
   "scripts": {
+    "prepare": "lefthook install",
     "format": "biome format --write .",
-    "lint": "biome lint ."
+    "lint": "pnpm run lint:biome && pnpm run lint:knip",
+    "lint:biome": "biome lint .",
+    "lint:knip": "knip"
   },
   "devDependencies": {
     "@biomejs/biome": "2.3.10",
     "@commitlint/cli": "20.2.0",
     "@commitlint/config-conventional": "20.2.0",
+    "knip": "5.76.3",
     "lefthook": "2.0.12"
   },
   "engines": {

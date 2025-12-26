@@ -1,0 +1,14 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "workspaces": {
+    "apps/*": {
+      "entry": ["src/index.ts", "src/index.tsx"],
+      "project": ["src/**/*.{js,ts,tsx,jsx}"]
+    },
+    "packages/*": {
+      "entry": ["src/index.{ts,tsx}"],
+      "project": ["src/**/*.{js,ts,tsx,jsx}"]
+    }
+  },
+  "ignoreDependencies": ["@commitlint/cli"]
+}
