@@ -1,0 +1,58 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Testing
+coverage/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+.pnpm-debug.log*
+
+# Build Outputs
+.next/
+.open-next/
+.wrangler/
+build/
+dist/
+out/
+
+# .env files
+.env
+.env.local
+.env.*
+
+# Turbo
+.turbo/
+
+# Rust/Cargo
+Cargo.lock
+**/*.rs.bk
+target/
+pkg/
+
+# IntelliJ
+.idea/*
+.idea_modules/*
+*.iml
+*.ipr
+*.iws
+
+# Viusual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Misc
+.DS_Store
+*.pem
