@@ -18,8 +18,13 @@
   "devDependencies": {
     "@types/chrome": "0.1.32",
     "@types/node": "catalog:",
+    "@types/turndown": "5.0.6",
     "@wxt-dev/module-react": "1.1.5",
     "typescript": "catalog:",
     "wxt": "0.20.13"
+  },
+  "dependencies": {
+    "@mozilla/readability": "0.6.0",
+    "turndown": "7.2.2"
   }
 }
